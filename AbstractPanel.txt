@@ -1,0 +1,43 @@
+import javax.swing.*;
+import java.awt.*;
+
+/**
+ * Represents the GUI component for painting an image of a playing card.
+ * @author lambertk
+ *
+ */
+public abstract class AbstractPanel extends JPanel{
+
+    protected Cell cell;
+
+    /**
+     * Constructor for an empty panel, displays a wire frame.
+     */
+    public AbstractPanel(){
+        this(null);
+    }
+
+    /**
+     * Constructor to display a given card's image.
+     * @param c the cell to display.
+     */
+    public AbstractPanel(Cell cell){
+        setBackground(new Color(110, 200, 150));
+        cell = c;
+    }
+
+    /**
+     * Paints the card's face image if a card is present, otherwise, paints the back side image.
+     */
+    public void paintComponent(Graphics g);
+
+    /**
+     * Resets the panel's card and refreshes the panel.
+     * @param c the card to be displayed.
+     */
+    public void setCard(Cell c){
+    	cell = c;
+    	repaint();
+    }
+
+}
