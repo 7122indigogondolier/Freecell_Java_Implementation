@@ -22,7 +22,7 @@ The application should then run. Click on cards to select them (highlighted in g
 
 ## Author
 
-Utkrist P. Thapa '21 
+(Group Project) Utkrist P. Thapa '21 
 
 **CSCI 209, Washington and Lee University**
 
